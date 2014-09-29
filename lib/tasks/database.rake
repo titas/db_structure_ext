@@ -1,7 +1,4 @@
-# Remove standard rails tasks
-original_db_structure_dump_task = Rake.application.instance_variable_get(:@tasks).delete('db:structure:dump')
-
-namespace :db do
+namespace :db_ext do
   namespace :structure do
 
     desc "Dump the database structure to a SQL file"
